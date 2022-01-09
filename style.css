@@ -1,15 +1,17 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700;900&display=swap');
 
 *{
-
+  align-content: center;
+   
+  
   text-align: center;
 }
 
-header {
-    text-align: left;
+#main{
+  margin-left: 200px; 
 }
 nav{
- 
+   
   width:100vh;
 }
 
@@ -46,7 +48,7 @@ nav{
     height: 50px;
     width:150px;
     margin-top: 30px;
-    margin-right: 30px;
+   
     cursor: pointer;
     
    
@@ -76,25 +78,28 @@ nav{
    }
 
     #down_section{
+    
     height:70vh;
     width:100vh
   }
   #head1{
     font-family: 'Montserrat', sans-serif;
     font-style: bold;
-    padding-top: 30px;
+    padding-top: 20px;
     text-align: center;
     font-size: 4rem;
+   
   }
   #btn2{
     border: 3px solid black;
     background: none;
     color: black;
     cursor: pointer;
-    height: 50px;
+    height: 30px;
     width:150px;
-    margin-top: 30px;
-    margin-right: 30px;
+    margin-top: 10px;
+    padding-bottom: 5px;
+   
 
   }
   #btn2:hover{
@@ -102,26 +107,29 @@ nav{
     background-color: black;
   }
    #inner_section {
-     margin: 100px 50px 50px 50px;
+   
     display: flex;
-    height: 300px;
-    column-gap: 50px;
+    height: 100vh;
+    width:100vh;
+    column-gap: 100px;
   }
    #inner_section> div {
-     padding: 70px;
-     font-size: 1rem;
+   
+    font-size: 1rem;
     border: 2px solid black;
-   text-align: center;
-    flex: auto;
+    flex-wrap: wrap;
     height: 300px;
+    width: 300px;
   }
   #logo{
     color: #FFFFFF;
     position: absolute;
-    top: 10px;
-    left: 20px;
+    padding-top: 10px;
+    
   }
   footer{
+    margin-top: -20px;
+    margin-left: 200px;
     height: 100px;
     width: 100vh;
     background-color: #2b2929d9;
@@ -131,10 +139,11 @@ nav{
   color: #FFFFFF;
    text-align: right;
   padding-top: 40px;
-  padding-right: 50px;
+  padding-right: 30px;
  
   }
  #footerul{
+  
  margin-top: -40px;
    list-style-type: none;
   text-align: left;
@@ -148,7 +157,7 @@ nav{
     -webkit-box-pack: start;
         -ms-flex-pack: start;
             justify-content: flex-start;
-    gap: 20px;
+    gap: 4px;
 
 
  } 
@@ -156,14 +165,31 @@ nav{
    body{
 
   position: absolute;
-  width: 1440px;
-  height: 115px;
+  width: 100vh;
+  height: 100vh;
   left: 0px;
   top: 0px;
 }
 	
 }
 @media ( max-width: 480px ) {
+  #main{
+    position: relative;
+  }
+  #down_section{
+    position:relative;
+    height:100vh;
+    width:100vh;
+  }
+  #inner_section{
+    margin-left: 200px;
+    width: 100vh;
+    height:100vh;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    column-gap: 2px;
+  }
 	
 	
   
